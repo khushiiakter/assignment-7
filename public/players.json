@@ -1,0 +1,123 @@
+[
+    {
+      "playerId": 1,
+      "name": "Virat Kohli",
+      "country": "India",
+      "image": "https://i.ibb.co/tCQxzgc/Virat-Kohli-HD-Images.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "",
+      "biddingPrice": 150
+    },
+    {
+      "playerId": 2,
+      "name": "Ben Stokes",
+      "country": "England",
+      "image": "https://i.ibb.co/qjgfgQw/England-Cricket-Team-Player-Ben-Stokes-Back-To-ODI-Format-After-Retirement-World-Cup-2023-Lat.jpg",
+      "role": "All-rounder",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 180
+    },
+    {
+      "playerId": 3,
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "image": "https://i.ibb.co/XsjCMkk/KING-BABAR-AZAM.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "",
+      "biddingPrice": 130
+    },
+    {
+      "playerId": 4,
+      "name": "Mitchell Starc",
+      "country": "Australia",
+      "image": "https://i.ibb.co/YLJqDHb/IPL-auction-KKR-picks-Mitchell-Starc-for-record-breaking-Rs-24-75-crore-bid-Pat-Cummins-record.jpg",
+      "role": "Bowler",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm fast",
+      "biddingPrice": 140
+    },
+    {
+      "playerId": 5,
+      "name": "Jasprit Bumrah",
+      "country": "India",
+      "image": "https://i.ibb.co/N933fTq/Jasprit-bumrah-free-png.jpg",
+      "role": "Bowler",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 160
+    },
+    {
+      "playerId": 6,
+      "name": "Kane Williamson",
+      "country": "New Zealand",
+      "image": "https://i.ibb.co.com/cT94K39/download.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm off-spin",
+      "biddingPrice": 140
+    },
+    {
+      "playerId": 7,
+      "name": "Quinton de Kock",
+      "country": "South Africa",
+      "image": "https://i.ibb.co/9YCLv7S/quinton-de-kock.jpg",
+      "role": "Wicket-keeper",
+      "battingType": "Left-hand bat",
+      "bowlingType": "",
+      "biddingPrice": 120
+    },
+    {
+      "playerId": 8,
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "image": "https://i.ibb.co/3BWQQSz/Rashid-Khan-World-cup-photo.jpg",
+      "role": "Bowler",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm leg-spin",
+      "biddingPrice": 150
+    },
+    {
+      "playerId": 9,
+      "name": "David Warner",
+      "country": "Australia",
+      "image": "https://i.ibb.co/TYNRhFr/Former-Australia-Captain-On-David-Warner-s-Huge-BBL-Pay-Hike-It-Creates-a-Headache-a-Parti.jpg",
+      "role": "Batsman",
+      "battingType": "Left-hand bat",
+      "bowlingType": "",
+      "biddingPrice": 135
+    },
+    {
+      "playerId": 10,
+      "name": "Mahmudullah",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/sQgWL7G/346.webp",
+      "role": "All-rounder",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm off-spin",
+      "biddingPrice": 125
+    },
+    {
+      "playerId": 11,
+      "name": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/9ybw97m/Shakib-Al-Hasan.jpg",
+      "role": "All-rounder",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm orthodox spin",
+      "biddingPrice": 170
+    },
+    {
+      "playerId": 12,
+      "name": "Faf du Plessis",
+      "country": "South Africa",
+      "image": "https://i.ibb.co.com/tzmhgtH/faf-du-plessis-rcb.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "None",
+      "biddingPrice": 145
+    }
+  ]
+  

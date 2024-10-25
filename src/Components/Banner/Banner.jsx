@@ -7,7 +7,7 @@ const Banner = ({incrementCoins}) => {
         style={{
           backgroundImage: "url(https://i.ibb.co.com/s39Xy2G/bg-shadow.png)",
         }}
-        className="flex flex-col items-center justify-center bg-cover  bg-black bg-no-repeat  py-10 rounded-xl"
+        className="flex flex-col items-center justify-center bg-cover  bg-black bg-no-repeat  py-11 rounded-xl"
       >
         <img className="mb-6" src={banner} alt="" />
         <h1 className="text-4xl font-bold text-white">
