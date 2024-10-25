@@ -1,4 +1,4 @@
-const Player = ({player}) => {
+const Player = ({player, handleSelectedPlayers}) => {
     const {name,country, image, role, battingType, bowlingType, biddingPrice, playerId}= player;
   return (
     <div className="p-6 rounded-2xl border border-solid border-[#1313131A]">
@@ -25,7 +25,7 @@ const Player = ({player}) => {
         </div>
         <div className="flex items-center justify-between">
           <p className="text-base font-semibold text-[#131313]">Price: ${biddingPrice}</p>
-          <button className="border-[#1313131A] border border-solid text-sm text-[#131313] rounded-lg py-2 px-4">Choose Player</button>
+          <button onClick={()=> handleSelectedPlayers(player)} className="border-[#1313131A] border border-solid text-sm text-[#131313] rounded-lg py-2 px-4">Choose Player</button>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Player from "../Player/Player";
 
-const Players = () => {
+const Players = ({handleSelectedPlayers}) => {
     const [players, setPlayers] = useState([]);
     useEffect( () => {
         fetch('players.json')
@@ -9,9 +9,9 @@ const Players = () => {
         .then( data => setPlayers(data))
     },[])
     return (
-        <div className="grid grid-cols-3 gap-6 px-4 container mx-auto">
+        <div id="mainPlayersSection" className="grid grid-cols-3 gap-6 px-4 container mx-auto">
             {
-                players.map(player => <Player key={player.id} player={player}></Player>)
+                players.map(player => <Player key={player.id} player={player} handleSelectedPlayers={handleSelectedPlayers}></Player>)
             }
         </div>
     );
