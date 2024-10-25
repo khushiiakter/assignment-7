@@ -1,31 +1,50 @@
 import { useState } from "react";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 import Players from "../Players/Players";
+import { toast } from "react-toastify";
 const MainSection = ({coins, setCoins}) => {
   const [isActive, setIsActive] = useState(true);
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
   const handleSelectedPlayers =(player) =>{
     const isExist = selectedPlayers.find(p => p.playerId == player.playerId);
+    if(selectedPlayers.length >=6 ){
+      toast.error("You can only select 6 players!");
+      return;
+    }
+
     if(isExist){
-      alert("Already Exist.")
+      toast.error("Player Already Selected!")
       return;
     }else{
       if(coins >= player.biddingPrice){
         setSelectedPlayers([...selectedPlayers, player]);
-        setCoins(coins - player.biddingPrice)
+        setCoins(coins - player.biddingPrice);
+        toast.success(`${player.name} selected!`)
     }else{
-      alert('Not enough coins')
+      toast.error('Not enough coins to select this player.')
     }
     }
         
   }
 
-  const handleDelete = (id, price) =>{
+  const handleDelete = (id, price, name) =>{
     setSelectedPlayers(selectedPlayers.filter(p => p.playerId !== id));
-    setCoins(coins + price)
+    setCoins(coins + price);
+    toast.warning(`${name} removed from the team.`, {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      
+      });
+    
   }
-
+  
   return (
     <div className="px-4 container mx-auto my-8">
       <div className="flex  justify-between items-center mb-8">
@@ -62,10 +81,10 @@ const MainSection = ({coins, setCoins}) => {
       {/* toggle btn section  */}
 
         {
-          isActive? <Players handleSelectedPlayers={handleSelectedPlayers}></Players> : <SelectedPlayers selectedPlayers={selectedPlayers} handleDelete={handleDelete} ></SelectedPlayers>
+          isActive? <Players handleSelectedPlayers={handleSelectedPlayers}></Players> : <SelectedPlayers setIsActive={setIsActive} selectedPlayers={selectedPlayers} handleDelete={handleDelete} ></SelectedPlayers>
         }
     </div>
   );
 };
-
+// 
 export default MainSection;

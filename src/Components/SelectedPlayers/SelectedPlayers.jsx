@@ -1,5 +1,5 @@
 
-const SelectedPlayers = ({ selectedPlayers,handleDelete }) => {
+const SelectedPlayers = ({ selectedPlayers,handleDelete, setIsActive }) => {
     
 
   return (
@@ -26,7 +26,7 @@ const SelectedPlayers = ({ selectedPlayers,handleDelete }) => {
                 </div>
               </div>
             </div>
-            <div onClick={()=>handleDelete(player.playerId, player.biddingPrice)} className="mr-12 text-2xl">
+            <div onClick={()=>handleDelete(player.playerId, player.biddingPrice, player.name)} className="mr-12 text-2xl">
               <i className="fa-regular fa-trash-can"></i>
             </div>
           </div>
@@ -35,7 +35,7 @@ const SelectedPlayers = ({ selectedPlayers,handleDelete }) => {
       ))}
 
         <button  className="p-2  border border-solid border-[#131313] rounded-2xl">
-          <button className="py-3 px-5 rounded-xl text-[#131313] font-bold bg-[#E7FE29]">Add More Player</button>
+          <button onClick={() => setIsActive(true)} className="py-3 px-5 rounded-xl text-[#131313] font-bold bg-[#E7FE29]">Add More Player</button>
         </button>
     </div>
   );
