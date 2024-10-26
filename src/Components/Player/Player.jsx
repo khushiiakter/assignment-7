@@ -1,5 +1,8 @@
+import { useState } from "react";
+
 const Player = ({player, handleSelectedPlayers}) => {
     const {name,country, image, role, battingType, bowlingType, biddingPrice, playerId}= player;
+    const [chosen, setChosen]= useState(false);
   return (
     <div className="p-6 rounded-2xl border border-solid border-[#1313131A]">
       <div className="mb-6 h-[240px] ">
@@ -25,7 +28,7 @@ const Player = ({player, handleSelectedPlayers}) => {
         </div>
         <div className="flex items-center justify-between">
           <p className="text-base font-semibold text-[#131313]">Price: ${biddingPrice}</p>
-          <button onClick={()=> handleSelectedPlayers(player)} className="border-[#1313131A] border border-solid text-sm text-[#131313] rounded-lg py-2 px-4">Choose Player</button>
+          <button onClick={()=> {handleSelectedPlayers(player), setChosen(!false)}} style={{backgroundColor: chosen ? "#E7FE29" : "white"}} className="border-[#1313131A] border border-solid text-sm text-[#131313] rounded-lg py-2 px-4">Choose Player</button>
         </div>
       </div>
     </div>

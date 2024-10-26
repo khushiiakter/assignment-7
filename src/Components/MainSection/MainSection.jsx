@@ -80,7 +80,7 @@ const MainSection = ({coins, setCoins}) => {
       {/* toggle btn section  */}
 
         {
-          isActive? <Players handleSelectedPlayers={handleSelectedPlayers}></Players> : <SelectedPlayers setIsActive={setIsActive} selectedPlayers={selectedPlayers} handleDelete={handleDelete} ></SelectedPlayers>
+          isActive? <Players handleSelectedPlayers={handleSelectedPlayers} ></Players> : <SelectedPlayers setIsActive={setIsActive} selectedPlayers={selectedPlayers} handleDelete={handleDelete} ></SelectedPlayers>
         }
     </div>
   );
