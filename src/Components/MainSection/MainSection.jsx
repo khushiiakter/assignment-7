@@ -47,9 +47,8 @@ const MainSection = ({coins, setCoins}) => {
   
   return (
     <div className="px-4 container mx-auto my-8">
-      <div className="flex  justify-between items-center mb-8">
-        <h3 className="text-3xl  font-bold text-[#131313]">{`${
-          isActive ? "Available Players" : `Selected Player (${selectedPlayers.length}/6)`
+      <div className="flex  justify-between items-center mb-8 sticky z-10 top-[72px] bg-white	">
+        <h3 className="text-3xl  font-bold text-[#131313]">{`${isActive ? "Available Players" : `Selected Player (${selectedPlayers.length}/6)`
         }`}</h3>
 
         <div>

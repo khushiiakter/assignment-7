@@ -2,7 +2,7 @@ import logo from '../../assets/logo.png'
 import coin from '../../assets/coin.png'
 const Navbar = ({coins}) => {
     return (
-        <div className='flex justify-between items-center mx-4  border my-3'>
+        <div className='flex justify-between items-center mx-4  my-3 sticky   bg-white top-0 z-20'>
             <div> 
                 <img src={logo} alt="" />
             </div>

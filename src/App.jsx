@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar/Navbar'
 import MainSection from './Components/MainSection/MainSection';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Components/Footer';
 
 function App() {
   const [coins, setCoins] = useState(0);
@@ -20,6 +21,7 @@ function App() {
       <Navbar coins={coins}></Navbar>
       <Banner incrementCoins={incrementCoins}></Banner>
       <MainSection coins={coins} setCoins={setCoins}></MainSection>
+      <Footer></Footer>
       <ToastContainer
         position="top-center"
         autoClose={2000}

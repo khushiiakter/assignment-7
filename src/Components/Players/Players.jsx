@@ -9,7 +9,7 @@ const Players = ({handleSelectedPlayers}) => {
         .then( data => setPlayers(data))
     },[])
     return (
-        <div id="mainPlayersSection" className="grid grid-cols-3 gap-6 px-4 container mx-auto">
+        <div id="mainPlayersSection" className="grid grid-cols-3 gap-6 container mx-auto">
             {
                 players.map(player => <Player key={player.id} player={player} handleSelectedPlayers={handleSelectedPlayers}></Player>)
             }
