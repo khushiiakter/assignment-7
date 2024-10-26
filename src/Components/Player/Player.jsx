@@ -6,8 +6,8 @@ const Player = ({player, handleSelectedPlayers}) => {
         <img className="object-cover w-full h-full rounded-2xl" src={image} alt="" />
       </div>
       <div className="flex flex-col gap-4">
-        <div className="flex items-center ">
-          <img src="" alt="" />
+        <div className="flex items-center  gap-4">
+          <i className="fa-solid fa-user-large text-lg"></i>
           <h3 className="text-xl font-semibold text-[#131313]">{name}</h3>
         </div>
         <div className="flex items-center justify-between">
